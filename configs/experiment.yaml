@@ -1,0 +1,20 @@
+paths:
+  gos_repo: ../graph-of-skills
+  skills_library: ../graph-of-skills/data/skillsets/skills_200
+  gos_workspace: ../graph-of-skills/data/gos_workspace/skills_200_v1
+  skillsbench_tasks: ../graph-of-skills/evaluation/skillsbench/tasks
+  results_dir: /mnt/c/Users/maxfo/Desktop/gos-sanity-results
+retrieval:
+  top_n: 8
+  max_context_chars: 32000
+agent:
+  backend: anthropic
+  model: claude-sonnet-4-5
+  timeout_s: 3600
+  harbor_timeout_multiplier: 5
+queries:
+  selection_seed: 20260430
+  count: 30
+perturbations:
+  add_irrelevant_cosine_max: 0.2
+  replace_similar_rho_epsilon: 0.05

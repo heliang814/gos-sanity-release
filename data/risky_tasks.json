@@ -1,0 +1,22 @@
+[
+  {
+    "task_id": "react-performance-debugging",
+    "evidence": [
+      {
+        "file": "tests/test_outputs.py",
+        "line": 23,
+        "text": "assert elapsed < 800, f\"Page took {elapsed:.0f}ms (should be <800ms)\""
+      },
+      {
+        "file": "tests/test_outputs.py",
+        "line": 42,
+        "text": "assert elapsed < 1000, f\"Products API took {elapsed:.0f}ms (should be <1000ms)\""
+      },
+      {
+        "file": "tests/test_outputs.py",
+        "line": 52,
+        "text": "assert elapsed < 800, f\"Checkout took {elapsed:.0f}ms (should be <800ms)\""
+      }
+    ]
+  }
+]
